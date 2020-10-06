@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="App">
+<head>
+    <title></title>
+    
+    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
+    <script src="App/AppConfig.js"></script>
+
+    <script src="App/Factory/userFactory.js"></script>
+    
+    <script src="App/Controllers/MainController.js"></script>
+    <script src="App/Controllers/createController.js"></script>
+    <script src="App/Controllers/updateController.js"></script>
+    <script src="App/Controllers/getUserController.js"></script>
+    <script src="App/Controllers/getListController.js"></script>
+    
+<style>
+    a
+    {
+        margin: 20px;
+    }
+</style>
+    <base href="/">
+</head>
+<body ng-controller="mainController">
+    <h2>DFO Test</h2>
+    <div>
+        <a href="create">Create User</a>
+        <a href="update">Update User</a>
+        <a href="getUser">Get User</a>
+        <a href="getList">get List</a>
+    </div>
+    <div ng-view></div>
+</body>
+</html>
